@@ -1,26 +1,37 @@
-footer{
-    margin-top: 10px; /*отступ поля*/
-    background: rgb(83, 74, 56);   /*цвет поля*/
-    line-height: 50px;  /*размер поля*/
-    text-align: center;   /*центрируем*/
-    color: aqua;  /*цвет букв*/
-    font-family: 'Courier New', Courier, monospace; /*выбранные шрифты*/
-    font-size: 26pt;/*размер букв*/
+footer {
+    margin-top: 10px;
+    /*отступ поля*/
+    background: rgb(83, 74, 56);
+    /*цвет поля*/
+    line-height: 50px;
+    /*размер поля*/
+    text-align: center;
+    /*центрируем*/
+    color: aqua;
+    /*цвет букв*/
+    font-family: 'Courier New', Courier, monospace;
+    /*выбранные шрифты*/
+    font-size: 26pt;
+    /*размер букв*/
 }
 
-body {margin: 0;}
-h1{
+body {
+    margin: 0;
+}
+
+h1 {
     color: blue;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h2{
+
+h2 {
     color: blueviolet;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-fieldset{
+fieldset {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -30,55 +41,66 @@ fieldset{
     border-radius: 2%;
 }
 
-input[type= "submit"] {
+input[type="submit"] {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     background: #dac5c5;
     border-radius: 10%;
-    
+
 }
 
 input[type="text"],
 input[type="tel"],
-input[type="email"]{
+input[type="email"] {
     color: brown;
     border: 3px solid #4181a5;
     margin-bottom: 5px;
 }
 
-select{
+select {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 3px solid #4181a5;
     color: red;
 }
 
-textarea{
+textarea {
     border: 3px solid #4181a5;
     border-radius: 2%;
 }
 
-#alt {color: red;}
-h1#alt {color: green;}
+#alt {
+    color: red;
+}
+
+h1#alt {
+    color: green;
+}
 
 code pre {
     background-color: #4181a5;
-    border:  solid 1px chocolate;
-     font-size: 18pt;
-     color: burlywood;
+    border: solid 1px chocolate;
+    font-size: 18pt;
+    color: burlywood;
 }
 
 /* сестринский селектор,применяется для первого абзаца */
-h3+p {font-style: italic;}  
+h3+p {
+    font-style: italic;
+}
+
 /* если поставить вместо + тильду ~ , то применяется ко всем абзацам после заголовка*/
 
 a {
     text-decoration: none;
 }
 
-a:link {color: royalblue;}
+a:link {
+    color: royalblue;
+}
+
 a:active {
     color: red;
 }
@@ -87,10 +109,95 @@ a:visited {
     color: royalblue;
 }
 
-a:hover {color: green;
-background: yellow;}
+a:hover {
+    color: green;
+    background: yellow;
+}
 
 .mail::before {
     content: '\2709';
 }
-.mail::after {content: '\2709' ;}
+
+.mail::after {
+    content: '\2709';
+}
+
+table {
+    table-layout: fixed;
+    vertical-align: center;
+    text-align: center;
+    border: 1px solid rgb(165, 72, 65);
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr,
+td {
+    border: 1px solid rebeccapurple;
+    padding: 3px;
+    font-weight: 600;
+}
+
+tr:nth-child(2n-1) {
+    background-color: yellowgreen;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+h4{
+    /* display: inline; -строчное представление,встанут в одну линию */
+    display: inline-block;
+    width: 50%;
+}
+
+.container {
+    background: blue;
+    display: flex;
+    flex-direction:  row;
+    justify-content: center;
+    align-items: end;
+}
+
+.block1 {
+    width: 20%;
+    height: 50px;
+    background: green;
+}
+.block2 {
+    width: 20%;
+    height: 100px;
+    background: rgb(128, 0, 0);
+}
+.block3 {
+    width: 20%;
+    height: 150px;
+    background: rgb(204, 224, 16);
+}
+.block4 {
+    width: 20%;
+    height: 200px;
+    background: rgb(197, 20, 138);
+}
+
+.test_block{
+    width: 100px;
+    height: 50px;
+    border: 1px solid chocolate;
+    margin: auto;
+    padding: auto;
+}
+
+.vcenter{
+    border: 1px solid black;
+    width: 50px;
+    height: 20px;
+    margin-top:  15px ;
+    margin-left: 25px;
+}
